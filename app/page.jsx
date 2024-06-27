@@ -76,7 +76,7 @@ export default function Home() {
     {
       title: 'Cheapest SMM panel',
       icon: <PiGaugeBold size={50} className="min-w-[85px]" color="white" />,
-      content: `Discover the most affordable Telegram marketing services with DivineSMM! Our prices are unbeatable, and we guarantee to match any offer worldwide. If you’re looking for cost-effective Telegram marketing, DivineSMM is your best choice. Join us and experience top-quality services without breaking the bank.`,
+      content: `Discover the most affordable Telegram marketing services with DivineSMM! Our prices are unbeatable, and we guarantee to match any offer worldwide. If youre looking for cost-effective Telegram marketing, DivineSMM is your best choice. Join us and experience top-quality services without breaking the bank.`,
     },
     {
       title: 'Best SMM Panel India',
