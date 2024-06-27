@@ -196,10 +196,12 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
               Telegram is one of the most popular social media platforms and is
               quickly becoming a marketing powerhouse. With over 500 million
               active monthly users, Telegram is a great place to connect with
-              your customers, followers, and fans. If you're a small business
-              owner looking to boost your social media presence, consider using
-              DivineSMM's top-notch services for Telegram. It's a fantastic way
-              to reach more people and grow your audience.
+              your customers, followers, and fans. If {`you're`} a small
+              business owner looking to boost your social media presence,
+              consider using{' '}
+              <span className="font-bold text-cyan-600">DivineSMM</span>s
+              top-notch services for Telegram. {`It's`} a fantastic way to reach
+              more people and grow your audience.
             </p>
             <p className="text-neutral-800 text-lg font-normal max-w-[600px]">
               At DivineSMM, we focus on enhancing your Telegram profile quality.
@@ -275,7 +277,7 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
           How to Order SMM Panel Services?
         </h1>
         <h2 className="text-2xl  text-cyan-600 font-medium">
-          Here's how you can buy wholesale Telegram services from{' '}
+          {` Here's`} how you can buy wholesale Telegram services from{' '}
           <span className="font-bold text-cyan-600">DivineSMM!</span>
         </h2>
         <h3 className="text-neutral-800 text-lg font-normal max-w-[900px] text-center">
@@ -431,9 +433,9 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
               With <span className="font-bold text-cyan-600">DivineSMM</span>,
               you can boost your Telegram presence effortlessly! Whether you
               need more followers, increased engagement, or better visibility,
-              we've got you covered. Our services include growing your Telegram
-              followers, enhancing engagement on your posts, and boosting your
-              overall visibility. Let{' '}
+              {`we've`} got you covered. Our services include growing your
+              Telegram followers, enhancing engagement on your posts, and
+              boosting your overall visibility. Let{' '}
               <span className="font-bold text-cyan-600">DivineSMM</span> help
               you take your Telegram game to the next level!
             </p>
@@ -456,7 +458,8 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
           the Best Social Media Marketing Panel for Telegram!
         </h2>
         <h3 className="text-neutral-800 text-lg font-normal max-w-[900px] text-center">
-          At <span className="font-bold text-cyan-600">DivineSMM</span> , we're
+          At <span className="font-bold text-cyan-600">DivineSMM</span> ,{' '}
+          {`we're`}
           the top choice for Telegram marketing. Our team has the experience and
           know-how to help your business thrive on Telegram. We offer expert
           advice on creating effective campaigns and tracking their success.
@@ -483,11 +486,11 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
               and reliable solutions. We understand the significance of
               cost-efficiency, priding ourselves on being the most
               budget-friendly option available. Our competitive pricing
-              guarantees maximum return on investment, whether you're an
+              guarantees maximum return on investment, whether {`you're`} an
               individual, small business owner, or digital marketing agency.
               Backed by a robust network and deep industry knowledge, we deliver
               customized services that precisely meet your needs, cementing our
-              position as India's ultimate SMM panel.
+              position as {`India's`} ultimate SMM panel.
             </p>
             <p>
               Introducing{' '}
@@ -497,7 +500,7 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
               SMM services are designed to skyrocket your followers, boost
               engagement, and elevate your brand visibility on Instagram. For
               YouTube,{' '}
-              <span className="font-bold text-cyan-600">DivineSMM</span>'s
+              <span className="font-bold text-cyan-600">DivineSMM</span>s
               dedicated panel in India helps you grow subscribers, increase
               video views, and establish a powerful online presence.
             </p>
@@ -570,21 +573,21 @@ At DivineSMM, Telegram becomes your stage for relaxed audio conversations with f
               of social media marketing, leveraging their expertise to deliver
               exceptional results that exceed your expectations. Whether you
               need help with Telegram, Instagram, Facebook, Twitter, or any
-              other platform, rest assured, we've got you covered. With
-              affordable pricing options and 24/7 customer support, we've made
-              it easy for businesses of all sizes to access top-tier social
+              other platform, rest assured, {`we've`} got you covered. With
+              affordable pricing options and 24/7 customer support, {`we've`}{' '}
+              made it easy for businesses of all sizes to access top-tier social
               media marketing services that produce real, measurable results.
             </p>
             <p>
               Discover{' '}
               <span className="font-bold text-cyan-600">DivineSMM</span>, your
-              ultimate partner for unleashing your brand's full potential on
+              ultimate partner for unleashing your {`brand's`} full potential on
               Telegram. Our mission is clear: empower businesses like yours to
               thrive online by providing top-notch services. With{' '}
               <span className="font-bold text-cyan-600">DivineSMM</span>, you
               can establish a strong online presence and connect with a broader
-              audience than ever before. Don't wait—start today and transform
-              your social media strategy with the{' '}
+              audience than ever before.{` Don't`} wait—start today and
+              transform your social media strategy with the{' '}
               <span className="font-bold">
                 leading SMM panel in Korea and the Philippines!
               </span>
