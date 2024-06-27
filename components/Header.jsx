@@ -4,10 +4,13 @@ const Header = () => {
       <h1 className="text-5xl font-bold">
         Best SMM Panel | Cheapest SMM Panel
       </h1>
-      <h2 className="text-2xl w-[90%] max-w-[900px]">
-        DivineSMM is your one-stop shop for all things Telegram growth. We offer
-        everything you need to take your channel or group to the next level,
-        without breaking the bank!
+      <h2 className="text-2xl w-[90%] max-w-[1200px]">
+        DivineSMM is the top choice for SMM Panels, offering the best prices
+        around. We provide a wide range of services specifically for Telegram,
+        including increasing channel members, boosting post views, growing group
+        members, and more. Whether you want to expand your reach or enhance
+        engagement, DivineSMM has got you covered. Choose us for your Telegram
+        needs and watch your community thrive!
       </h2>
     </div>
   );
