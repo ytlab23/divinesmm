@@ -10,8 +10,11 @@ const Footer = () => {
     'Telegram Comments & Shares',
   ];
   return (
-    <div className="flex flex-col gap-y-8 bg-cyan-900 px-16 py-8">
-      <div className=" flex justify-between">
+    <div
+      className="flex flex-col gap-y-8 bg-cyan-900 px-4 sm:px-16 py-8"
+      id="contact"
+    >
+      <div className=" flex flex-col sm:flex-row justify-between gap-8">
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-medium">Divinesmm</h1>
           <p className="max-w-[320px] text-sm text-slate-50">
