@@ -12,7 +12,7 @@ import testimonialFour from '../assets/testimonial4.png';
 const TestimonialSlider = () => {
   const settings = {
     dots: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     // centerPadding: '15px',
@@ -40,8 +40,9 @@ const TestimonialSlider = () => {
           <p className="">Businessman</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
-            Wow! This is amazing. I have been purchasing Instagram Likes for
-            over a year and never got a delay! SmmValy did a great job always!
+            Wow! This is amazing. I have been purchasing Telegram group members
+            for over a year and never got a delay! SmmValy did a great job
+            always!
           </p>
         </div>
         <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
@@ -54,7 +55,7 @@ const TestimonialSlider = () => {
           <p className="">Instagram Model</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
-            Order 10000 Instagram Followers and Got my followers as promised in
+            Order 10000 Telegram Followers and Got my followers as promised in
             time! Happy to Purchased from SmmValy. We will Continue with them
             for our future purchase.
           </p>
@@ -69,9 +70,8 @@ const TestimonialSlider = () => {
           <p className="">Instagram Model</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
-            Order 10000 Instagram Followers and Got my followers as promised in
-            time! Happy to Purchased from SmmValy. We will Continue with them
-            for our future purchase.
+            Purchased 2000 Telegram subscibers for our company and worked
+            indeed! Support team is also in time always.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
@@ -84,9 +84,9 @@ const TestimonialSlider = () => {
           <p className="">Instagram Model</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
-            Order 10000 Instagram Followers and Got my followers as promised in
-            time! Happy to Purchased from SmmValy. We will Continue with them
-            for our future purchase.
+            I Just love the services, instant delivered my Telegram views order
+            and the Telegram Page subscribers! I am buying from them long time
+            and love to buy more in future.
           </p>
         </div>
       </Slider>

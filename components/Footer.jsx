@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Footer = () => {
+import initTranslations from '../app/i18n';
+
+const Footer = async ({ locale }) => {
+  const { t: tFooter } = await initTranslations(locale, ['footer']);
   const services = [
     'Telegram Group Members',
     'Telegram Channel Subscribers',
@@ -18,13 +21,12 @@ const Footer = () => {
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-medium">Divinesmm</h1>
           <p className="max-w-[320px] text-sm text-slate-50">
-            DivineSMM is your one-stop shop for skyrocketing your engagement and
-            rankings!
+            {/* DivineSMM is your one-stop shop for skyrocketing your engagement and
+            rankings! */}
+            {tFooter('content-one')}
           </p>
           <p className="max-w-[320px] text-sm text-slate-50">
-            Our team of Telegram wizards are ready to craft a winning strategy
-            that gets your brand booming. Say goodbye to crickets and hello to a
-            thriving community!
+            {tFooter('content-two')}
           </p>
         </div>
         <div className="flex flex-col gap-y-4">
@@ -52,9 +54,10 @@ const Footer = () => {
       </div>
       <hr />
       <div className="flex justify-center items-center">
-        <p className="max-w-[320px] text-sm text-slate-100">
+        <p className="max-w-[520px] text-sm text-slate-100">
           All Right Reserved by{' '}
-          <Link href="https://divinesmm.com">divinesmm.com</Link> | © 2024
+          <Link href="https://divinesmm.com">divinesmm.com</Link> | The #1
+          Telegram SMM Panel | © 2024
         </p>
       </div>
     </div>

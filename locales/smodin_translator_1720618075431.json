@@ -1,0 +1,37 @@
+[
+  {
+    "language": "Italian",
+    "symbol": "it",
+    "text": "[\n    {\n      titolo: \"Prezzo più economico\",\n      contenuto:\n        'I nostri prezzi sono i più ragionevoli sul mercato, a partire da 0,001$.',\n    },\n    {\n      titolo: \"Assistenza clienti 24 ore su 24, 7 giorni su 7\",\n      contenuto:\n        \"Siamo qui 24 ore su 24, 7 giorni su 7 per aiutarti a rendere il tuo evento un successo, rispondendo ai tuoi biglietti 24 ore su 24, 7 giorni su 7.\",\n    },\n    {\n      titolo: \"Consegna veloce\",\n      contenuto:\n        'La nostra consegna è veloce e possono essere necessari minuti o secondi per evadere gli ordini!',\n    },\n  ];"
+  },
+  {
+    "language": "German",
+    "symbol": "de",
+    "text": "[\n{\nTitel: „Günstigster Preis“,\nInhalt:\n„Unsere Preise sind die günstigsten auf dem Markt und beginnen bei 0,001 $.“\n},\n{\nTitel: „Kundensupport rund um die Uhr“,\nInhalt:\n„Wir sind rund um die Uhr für Sie da, um Ihre Veranstaltung zu einem Erfolg zu machen, und beantworten Ihre Tickets rund um die Uhr.“\n},\n{\nTitel: „Schnelle Lieferung“,\nInhalt:\n„Unsere Lieferung ist schnell und die Auftragserfüllung kann Minuten oder Sekunden dauern!“\n},\n];"
+  },
+  {
+    "language": "Arabic",
+    "symbol": "ar",
+    "text": "[\n    {\n      العنوان: \"أرخص الأسعار\"،\n      محتوى:\n        \"أسعارنا الأكثر معقولية في السوق، تبدأ من 0.001 دولار.\"\n    },\n    {\n      العنوان: \"دعم العملاء على مدار الساعة طوال أيام الأسبوع\"،\n      محتوى:\n        \"نحن هنا على مدار الساعة طوال أيام الأسبوع للمساعدة في إنجاح الحدث الخاص بك، ونرد على التذاكر الخاصة بك على مدار الساعة طوال أيام الأسبوع.\",\n    },\n    {\n      العنوان: \"التسليم السريع\"،\n      محتوى:\n        \"التسليم لدينا سريع، ويمكن أن يستغرق دقائق أو ثواني لتلبية الطلبات!\",\n    },\n  ];"
+  },
+  {
+    "language": "Portuguese",
+    "symbol": "pt",
+    "text": "[\n    {\n      título: 'Preço mais barato',\n      contente:\n        'Nossos preços são os mais razoáveis ​​do mercado, a partir de 0,001$.',\n    },\n    {\n      título: 'Suporte ao cliente 24 horas por dia, 7 dias por semana',\n      contente:\n        \"Estamos aqui 24 horas por dia, 7 dias por semana, para ajudar a tornar o seu evento um sucesso, respondendo aos seus ingressos 24 horas por dia, 7 dias por semana.\",\n    },\n    {\n      título: 'Entrega rápida',\n      contente:\n        'Nossa entrega é rápida e pode levar minutos ou segundos para atender os pedidos!',\n    },\n  ];"
+  },
+  {
+    "language": "French",
+    "symbol": "fr",
+    "text": "[\n    {\n      titre : « Prix le moins cher »,\n      contenu:\n        'Nos prix les plus raisonnables du marché, à partir de 0,001$.',\n    },\n    {\n      titre : 'Support client 24h/24 et 7j/7',\n      contenu:\n        \"Nous sommes là 24h/24 et 7j/7 pour vous aider à faire de votre événement un succès, en répondant à vos tickets 24h/24 et 7j/7.\",\n    },\n    {\n      titre : 'Livraison rapide',\n      contenu:\n        'Notre livraison est rapide et l'exécution des commandes peut prendre quelques minutes ou secondes !',\n    },\n  ];"
+  },
+  {
+    "language": "Spanish",
+    "symbol": "es",
+    "text": "[\n    {\n      título: 'Precio más barato',\n      contenido:\n        'Nuestros precios son los más razonables del mercado, desde 0,001$.',\n    },\n    {\n      título: 'Atención al cliente 24 horas al día, 7 días a la semana',\n      contenido:\n        \"Estamos aquí las 24 horas del día, los 7 días de la semana para ayudarte a que tu evento sea un éxito, respondiendo a tus entradas las 24 horas del día, los 7 días de la semana.\",\n    },\n    {\n      título: 'Entrega rápida',\n      contenido:\n        '¡Nuestra entrega es rápida y puede llevar minutos o segundos completar los pedidos!',\n    },\n  ];"
+  },
+  {
+    "language": "English",
+    "symbol": "en",
+    "text": "[\n    {\n      title: 'Cheapest Price',\n      content:\n        'Our Prices most reasonable in the market, starting from at 0.001$.',\n    },\n    {\n      title: '24/7 Customer Support',\n      content:\n        \"We're here 24/7 to help make your event a success, replying to your tickets 24/7.\",\n    },\n    {\n      title: 'Fast Delivery',\n      content:\n        'Our Delivery is fast, and it can take minutes or seconds to fulfil orders!',\n    },\n  ];"
+  }
+]
