@@ -36,6 +36,7 @@ import TestimonialSlider from '@/components/Slider';
 import paymentsImg from '../../assets/payments.png';
 
 import initTranslations from '../i18n';
+import Services from '@/components/Services';
 
 export default async function Home({ params: { locale } }) {
   const { t: tServices } = await initTranslations(locale, ['services']);
@@ -149,7 +150,8 @@ export default async function Home({ params: { locale } }) {
         <h3 className="text-neutral-800 sm:text-lg text-base font-normal max-w-[900px] text-center">
           {tServices('content')}
         </h3>
-        <div className="flex gap-6 flex-wrap justify-center">
+        <Services />
+        {/* <div className="flex gap-6 flex-wrap justify-center">
           {services.map((service) => (
             <p
               key={service}
@@ -158,8 +160,8 @@ export default async function Home({ params: { locale } }) {
               {service}
             </p>
           ))}
-        </div>
-        <div className="flex flex-col lg:flex-row w-full justify-center gap-6 py-16">
+        </div> */}
+        {/* <div className="flex flex-col lg:flex-row w-full justify-center gap-6 py-16">
           <div className="flex flex-col gap-y-4 text-left lg:w-[50%]">
             <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
               {tServices('detail-title')}
@@ -213,17 +215,11 @@ export default async function Home({ params: { locale } }) {
           <div className="lg:w-[40%] self-center w-[100%]">
             <div className="tab_icon_ss ig_icon_bg">
               <div className="icon">
-                {/* <Image
-                  src={telegramImg}
-                  alt="telegram"
-                  className="max-w-[120px]"
-                /> */}
-                {/* <FaTelegram size={120} color="white" /> */}
                 <PiTelegramLogoThin size={120} />
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap items-center px-4 py-16 bg-[#f8f8f8] w-full">
