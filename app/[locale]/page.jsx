@@ -8,11 +8,6 @@ import priceImg from '../../assets/price.png';
 import twenyFourImg from '../../assets/247.png';
 import deliveryImg from '../../assets/delivery.png';
 
-// import { PiTelegramLogoThin } from 'react-icons/pi';
-// import { FaTags } from 'react-icons/fa';
-// import { BiSupport } from 'react-icons/bi';
-// import { FaShippingFast } from 'react-icons/fa';
-// import { RiDashboardHorizontalFill } from 'react-icons/ri';
 import { HiUserAdd } from 'react-icons/hi';
 import { FaCreditCard } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
@@ -470,7 +465,7 @@ export default async function Home({ params: { locale } }) {
         <div className="flex flex-col gap-y-3 md:w-[70%]">
           {JSON.parse(tFaqs('lists')).map((item, index) => (
             <div key={index}>
-              <h2 className="sm:text-lg text-sm flex items-center font-bold text-black text-left">
+              <h2 className="sm:text-lg flex items-center font-bold text-black text-left">
                 <span>{index + 1}</span>.{item.title}
               </h2>
               <p className="text-neutral-800 m-2">{item.content}</p>
@@ -538,7 +533,7 @@ export default async function Home({ params: { locale } }) {
         <div className="flex flex-col gap-y-3 md:w-[70%]">
           {JSON.parse(tBusinessFocus('lists')).map((item, index) => (
             <div key={index}>
-              <h2 className="sm:text-lg text-sm flex items-center font-bold text-black text-left">
+              <h2 className="sm:text-lg flex items-center font-bold text-black text-left">
                 {item.title}
               </h2>
               <p className="text-neutral-800 m-2">{item.content}</p>
