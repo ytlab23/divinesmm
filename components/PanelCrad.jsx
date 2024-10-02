@@ -7,7 +7,7 @@ const PanelCrad = ({ icon, title, content }) => {
         {icon}
       </div>
       <h2 className="text-2xl font-bold">{title}</h2>
-      <p className="text-sm">{content}</p>
+      <p className="text-sm" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };

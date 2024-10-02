@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Header from '@/components/Header';
 import Image from 'next/image';
@@ -7,11 +8,11 @@ import priceImg from '../../assets/price.png';
 import twenyFourImg from '../../assets/247.png';
 import deliveryImg from '../../assets/delivery.png';
 
-import { PiTelegramLogoThin } from 'react-icons/pi';
-import { FaTags } from 'react-icons/fa';
-import { BiSupport } from 'react-icons/bi';
-import { FaShippingFast } from 'react-icons/fa';
-import { RiDashboardHorizontalFill } from 'react-icons/ri';
+// import { PiTelegramLogoThin } from 'react-icons/pi';
+// import { FaTags } from 'react-icons/fa';
+// import { BiSupport } from 'react-icons/bi';
+// import { FaShippingFast } from 'react-icons/fa';
+// import { RiDashboardHorizontalFill } from 'react-icons/ri';
 import { HiUserAdd } from 'react-icons/hi';
 import { FaCreditCard } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
@@ -45,6 +46,13 @@ export default async function Home({ params: { locale } }) {
   const { t: tTestimonial } = await initTranslations(locale, ['testimonial']);
   const { t: tPayment } = await initTranslations(locale, ['payment']);
   const { t: tCardDatas } = await initTranslations(locale, ['cardDatas']);
+  const { t: tFaqs } = await initTranslations(locale, ['faqs']);
+  const { t: tTelegramStatus } = await initTranslations(locale, [
+    'telegramStatus',
+  ]);
+  const { t: tBusinessFocus } = await initTranslations(locale, [
+    'businessFocus',
+  ]);
 
   const aboutInfoImgs = [priceImg, twenyFourImg, deliveryImg];
 
@@ -136,7 +144,9 @@ export default async function Home({ params: { locale } }) {
           ))}
         </div>
       </div>
-
+      <h2 className="text-center p-2">
+        SIGN UP TO THE CHEAPEST AND FASTEST TELEGRAM SMM PANEL!
+      </h2>
       <div
         className="min-h-[80vh] bg-white flex flex-col sm:gap-y-16 gap-y-8 items-center sm:px-16 px-8 py-12 text-center"
         id="services"
@@ -147,79 +157,12 @@ export default async function Home({ params: { locale } }) {
         <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
           {tServices('secondary-title')}
         </h2>
-        <h3 className="text-neutral-800 sm:text-lg text-base font-normal max-w-[900px] text-center">
-          {tServices('content')}
-        </h3>
+        <h3
+          className="text-neutral-800 sm:text-lg text-base font-normal max-w-[900px] text-center"
+          dangerouslySetInnerHTML={{ __html: tServices('content') }}
+        />
+
         <Services />
-        {/* <div className="flex gap-6 flex-wrap justify-center">
-          {services.map((service) => (
-            <p
-              key={service}
-              className="min-w-[280px] max-w-[320px] sm:text-lg text-sm font-medium cursor-pointer text-white text-center px-6 py-3 bg-cyan-700 rounded-xl sm:rounded-full"
-            >
-              {service}
-            </p>
-          ))}
-        </div> */}
-        {/* <div className="flex flex-col lg:flex-row w-full justify-center gap-6 py-16">
-          <div className="flex flex-col gap-y-4 text-left lg:w-[50%]">
-            <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
-              {tServices('detail-title')}
-            </h2>
-            <p className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[600px]">
-              {tServices('detail-content-1')}
-            </p>
-            <p className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[600px]">
-              {tServices('detail-content-2')}
-            </p>
-            <div className="flex justify-between items-center max-w-[800px]">
-              <div className="flex gap-x-2 items-center w-[50%]">
-                <div className="flex justify-center items-center w-[35px] h-[35px] sm:w-[45px] sm:h-[45px] rounded-full bg-cyan-800">
-                  <FaTags size={40} className="w-[20px]" />
-                </div>
-                <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                  Affordable Prices
-                </p>
-              </div>
-              <div className="flex gap-x-2 items-center w-[50%]">
-                <div className="flex justify-center items-center w-[35px] h-[35px] sm:w-[45px] sm:h-[45px] rounded-full bg-cyan-800">
-                  <FaShippingFast size={40} className="w-[20px]" />
-                </div>
-
-                <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                  Super Fast Delivery
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-center max-w-[800px]">
-              <div className="flex gap-x-2 items-center w-[50%]">
-                <div className="flex justify-center items-center w-[35px] h-[35px] sm:w-[45px] sm:h-[45px] rounded-full bg-cyan-800">
-                  <RiDashboardHorizontalFill size={40} className="w-[20px]" />
-                </div>
-
-                <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                  Friendly Dashboard
-                </p>
-              </div>
-              <div className="flex gap-x-2 items-center w-[50%]">
-                <div className="flex justify-center items-center w-[35px] h-[35px] sm:w-[45px] sm:h-[45px] rounded-full bg-cyan-800">
-                  <BiSupport size={40} className="w-[20px]" />
-                </div>
-
-                <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                  24/7 customer support
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-[40%] self-center w-[100%]">
-            <div className="tab_icon_ss ig_icon_bg">
-              <div className="icon">
-                <PiTelegramLogoThin size={120} />
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap items-center px-4 py-16 bg-[#f8f8f8] w-full">
@@ -238,9 +181,10 @@ export default async function Home({ params: { locale } }) {
         <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
           {tHowtoOrder('secondary-title')}
         </h2>
-        <h3 className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[900px] text-center">
-          {tHowtoOrder('content')}
-        </h3>
+        <h3
+          className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[900px] text-center"
+          dangerouslySetInnerHTML={{ __html: tHowtoOrder('content') }}
+        />
 
         <div className="w-full flex lg:flex-row flex-col justify-center items-center gap-8 mt-8">
           <OrderCard
@@ -305,9 +249,12 @@ export default async function Home({ params: { locale } }) {
             <p className="text-sm sm:text-base">
               {tHowtoOrder('detail-content-1')}
             </p>
-            <p className="text-sm sm:text-base">
-              {tHowtoOrder('detail-content-2')}
-            </p>
+            <p
+              className="text-sm sm:text-base"
+              dangerouslySetInnerHTML={{
+                __html: tHowtoOrder('detail-content-2'),
+              }}
+            />
             <p className="text-sm sm:text-base">
               {tHowtoOrder('detail-content-3')}
             </p>
@@ -343,23 +290,39 @@ export default async function Home({ params: { locale } }) {
             {tHowtoOrder('detail-2-title')}
           </h2>
           <div className="flex flex-col gap-2">
-            <p className="text-sm sm:text-base">
-              {tHowtoOrder('detail-2-content-1')}
-            </p>
-            <p className="text-sm sm:text-base">
-              {tHowtoOrder('detail-2-content-2')}
-            </p>
+            <p
+              className="text-sm sm:text-base"
+              dangerouslySetInnerHTML={{
+                __html: tHowtoOrder('detail-2-content-1'),
+              }}
+            />
+
+            <p
+              className="text-sm sm:text-base"
+              dangerouslySetInnerHTML={{
+                __html: tHowtoOrder('detail-2-content-2'),
+              }}
+            />
+
             <p className="text-sm sm:text-base">
               {tHowtoOrder('detail-2-content-3')}
             </p>
           </div>
         </div>
+
         <Image
           src={socialStrategy}
           alt="gif"
           className="self-center lg:w-[50%] w-[100%] max-w-[500px]"
         />
       </div>
+      <h3 className="text-center p-1 text-white">
+        Then, why wait? Hit the button below and start your SMM panel business
+        now!
+      </h3>
+      <h2 className="text-center p-1 text-white font-bold">
+        GET STARTED WITH THE BEST TELEGRAM SMM PANEL
+      </h2>
 
       <div
         className="min-h-[80vh] bg-[#eff3fe] flex flex-col gap-y-16 items-center px-8 py-16 sm:p-16 text-center"
@@ -368,16 +331,23 @@ export default async function Home({ params: { locale } }) {
         <h1 className="sm:text-4xl text-2xl text-neutral-800 font-bold">
           {tWhyChooseUs('title')}
         </h1>
-        <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
-          {tWhyChooseUs('secondary-title')}
-        </h2>
+        <h2
+          className="sm:text-2xl text-lg  text-cyan-600 font-medium"
+          dangerouslySetInnerHTML={{
+            __html: tWhyChooseUs('secondary-title'),
+          }}
+        />
+
         <h3 className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[900px] text-center">
           {tWhyChooseUs('content')}
         </h3>
         <div className="w-full flex  gap-y-6 flex-col justify-center max-w-[900px]">
           <h2 className="sm:text-xl text-base  text-neutral-800 font-medium text-left">
-            <span className="font-bold text-cyan-600">DivineSMM!</span> is the
-            {`world's`} most affordable SMM panel service provider for Telegram.
+            And your account safety is our first priority. We don't believe in
+            any quick fixes, but we focus on providing the most organic
+            services. That's why our platform offers a built-in drip-feed system
+            for playing the game safely. Check out some reasons why you must
+            choose us:
           </h2>
           <div className="flex flex-col gap-y-3 self-start">
             {JSON.parse(tCardDatas('serviceProvider')).map((service) => (
@@ -457,7 +427,11 @@ export default async function Home({ params: { locale } }) {
             {tTestimonial('detail-title')}
           </h2>
           <div className="flex flex-col gap-2">
-            <p>{tTestimonial('detail-content-1')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: tTestimonial('detail-content-1'),
+              }}
+            />
             <p>{tTestimonial('detail-content-2')}</p>
             <p>{tTestimonial('detail-content-3')}</p>
           </div>
@@ -474,13 +448,120 @@ export default async function Home({ params: { locale } }) {
         <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
           {tPayment('secondary-title')}
         </h2>
-        <h3 className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[900px] text-center">
-          {tPayment('content')}
-        </h3>
+        <h3
+          className="text-neutral-800 sm:text-lg text-sm font-normal max-w-[900px] text-center"
+          dangerouslySetInnerHTML={{
+            __html: tPayment('content'),
+          }}
+        />
+
         <Image
           src={paymentsImg}
           alt="Visa/Master/Credit Card,Crypto Currency,payeer,perfectmoney,payoneer,jazzcash/easypaisa, Gcash,Paytm, Bkash, Nagad, Webmoney, Ali Pay, wise, western union"
         />
+      </div>
+      <div
+        className="min-h-[50vh] bg-white flex flex-col justify-center items-center gap-y-8 px-8 py-16 sm:p-16"
+        id="services"
+      >
+        <h1 className="sm:text-4xl text-2xl text-neutral-800 font-bold md:w-[70%]">
+          {tFaqs('title')}
+        </h1>
+        <div className="flex flex-col gap-y-3 md:w-[70%]">
+          {JSON.parse(tFaqs('lists')).map((item, index) => (
+            <div key={index}>
+              <h2 className="sm:text-lg text-sm flex items-center font-bold text-black text-left">
+                <span>{index + 1}</span>.{item.title}
+              </h2>
+              <p className="text-neutral-800 m-2">{item.content}</p>
+              {item.sublists && (
+                <ul className="m-3">
+                  {item.sublists.map((subitem, subindex) => (
+                    <li key={subindex} className="text-neutral-800">
+                      .{subitem}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div
+        className="min-h-[50vh] bg-white flex flex-col justify-center items-center gap-y-8 px-8 py-16 sm:p-16"
+        id="services"
+      >
+        <h1 className="sm:text-4xl text-2xl text-neutral-800 font-bold md:w-[70%]">
+          {tTelegramStatus('title')}
+        </h1>
+        <div className="flex flex-col gap-y-3 md:w-[70%]">
+          <ul className="mx-4 list-disc">
+            {JSON.parse(tTelegramStatus('lists')).map((item, index) => (
+              <li key={index} className="text-neutral-800 my-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <h2 className="text-black">
+            (Sources -{' '}
+            <a
+              href="https://www.statista.com/topics/9640/telegram/"
+              target="_blank"
+              className="text-blue-400 underline"
+              rel="noopener noreferrer"
+            >
+              Statista
+            </a>{' '}
+            &{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Telegram_(software)"
+              target="_blank"
+              className="text-blue-400 underline"
+              rel="noopener noreferrer"
+            >
+              Wikipedia
+            </a>
+            )
+          </h2>
+        </div>
+      </div>
+      <div
+        className="min-h-[50vh] bg-white flex flex-col justify-center items-center gap-y-8 px-8 py-16 sm:p-16"
+        id="services"
+      >
+        <h1 className="sm:text-4xl text-2xl text-neutral-800 font-bold md:w-[70%]">
+          {tBusinessFocus('title')}
+        </h1>
+        <h3 className="text-lg text-neutral-800 md:w-[70%]">
+          {tBusinessFocus('secondTitle')}
+        </h3>
+        <div className="flex flex-col gap-y-3 md:w-[70%]">
+          {JSON.parse(tBusinessFocus('lists')).map((item, index) => (
+            <div key={index}>
+              <h2 className="sm:text-lg text-sm flex items-center font-bold text-black text-left">
+                {item.title}
+              </h2>
+              <p className="text-neutral-800 m-2">{item.content}</p>
+              <p
+                className="text-neutral-800 m-2"
+                dangerouslySetInnerHTML={{
+                  __html: item.contentSecond,
+                }}
+              />
+            </div>
+          ))}
+        </div>
+        <h1 className="sm:text-4xl text-center text-2xl text-neutral-800 font-bold md:w-[70%]">
+          Want to Increase Your Reach On Telegram?
+        </h1>
+        <h3 className="text-lg text-center text-neutral-800 md:w-[70%]">
+          Get the best high-quality SMM services at the cheapest price from us.
+          Try out Divine Telegram SMM Panel and see your reach skyrocket like
+          never before. Sign up now!
+        </h3>
+        <p className="text-lg font-bold text-center text-black">
+          SIGN UP TO THE #1 TELEGRAM SMM PANEL!
+        </p>
       </div>
     </main>
   );
