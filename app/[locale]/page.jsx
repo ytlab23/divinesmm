@@ -157,7 +157,13 @@ export default async function Home({ params: { locale } }) {
           dangerouslySetInnerHTML={{ __html: tServices('content') }}
         />
 
-        <Services />
+        <Services
+          detailTitle={tServices('detail-title')}
+          detail2Content1={tServices('detail-2-content-1')}
+          detail2Content2={tServices('detail-2-content-2')}
+          detail2Content3={tServices('detail-2-content-3')}
+          serviceTypes={tServices('serviceTypes')}
+        />
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap items-center px-4 py-16 bg-[#f8f8f8] w-full">
@@ -338,11 +344,7 @@ export default async function Home({ params: { locale } }) {
         </h3>
         <div className="w-full flex  gap-y-6 flex-col justify-center max-w-[900px]">
           <h2 className="sm:text-xl text-base  text-neutral-800 font-medium text-left">
-            And your account safety is our first priority. We don't believe in
-            any quick fixes, but we focus on providing the most organic
-            services. That's why our platform offers a built-in drip-feed system
-            for playing the game safely. Check out some reasons why you must
-            choose us:
+            {tWhyChooseUs('content-2')}
           </h2>
           <div className="flex flex-col gap-y-3 self-start">
             {JSON.parse(tCardDatas('serviceProvider')).map((service) => (
