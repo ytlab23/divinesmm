@@ -17,7 +17,7 @@ const Services = (props) => {
     'Telegram Shares',
   ];
 
-  const [context, setContext] = useState(serviceTypes[1]);
+  const [context, setContext] = useState(serviceTypes[0]);
 
   return (
     <>
