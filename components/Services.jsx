@@ -8,6 +8,7 @@ import { PiTelegramLogoThin } from 'react-icons/pi';
 
 const Services = (props) => {
   const serviceTypes = JSON.parse(props.serviceTypes);
+  const serviceBenefits = JSON.parse(props.serviceBenefits);
   const services = [
     'Telegram Group Members',
     'Telegram Channel Subscribers',
@@ -74,7 +75,7 @@ const Services = (props) => {
                 <FaTags size={40} className="w-[20px]" />
               </div>
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Affordable Prices
+                {serviceBenefits[0]}
               </p>
             </div>
             <div className="flex gap-x-2 items-center w-[50%]">
@@ -83,7 +84,7 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Super Fast Delivery
+                {serviceBenefits[1]}
               </p>
             </div>
           </div>
@@ -94,7 +95,7 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Friendly Dashboard
+                {serviceBenefits[2]}
               </p>
             </div>
             <div className="flex gap-x-2 items-center w-[50%]">
@@ -103,7 +104,7 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                24/7 customer support
+                {serviceBenefits[3]}
               </p>
             </div>
           </div>
@@ -117,7 +118,12 @@ const Services = (props) => {
           </div>
         </div>
       </div>
-      <h2 className="text-black p-2 font-bold">GET STARTED!</h2>
+      <a
+        href=" https://panel.divinesmm.com/"
+        className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-black p-2 rounded-md border border-black"
+      >
+        GET STARTED!
+      </a>
       <div className="flex flex-col lg:flex-row gap-4 text-left justify-between lg:w-[85%]">
         <div className="flex flex-col gap-3">
           <h2 className="sm:text-2xl text-lg  text-cyan-600 font-medium">
@@ -140,7 +146,7 @@ const Services = (props) => {
                 <FaTags size={40} className="w-[20px]" />
               </div>
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Affordable Prices
+                {serviceBenefits[0]}
               </p>
             </div>
             <div className="flex gap-x-2 items-center w-[50%]">
@@ -149,7 +155,7 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Super Fast Delivery
+                {serviceBenefits[1]}
               </p>
             </div>
           </div>
@@ -160,7 +166,7 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                Friendly Dashboard
+                {serviceBenefits[2]}
               </p>
             </div>
             <div className="flex gap-x-2 items-center w-[50%]">
@@ -169,13 +175,18 @@ const Services = (props) => {
               </div>
 
               <p className="text-neutral-800 sm:text-lg text-sm font-normal">
-                24/7 customer support
+                {serviceBenefits[3]}
               </p>
             </div>
           </div>
         </div>
       </div>
-      <h2 className="text-black p-2 font-bold">ORDER NOW!</h2>
+      <a
+        href=" https://panel.divinesmm.com/"
+        className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-black p-2 rounded-md border border-black"
+      >
+        ORDER NOW!
+      </a>
     </>
   );
 };

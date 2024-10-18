@@ -21,6 +21,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center sm:gap-x-8 gap-x-6">
+        <a
+          href=" https://panel.divinesmm.com/"
+          className="text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
+        >
+          GET STARTED!
+        </a>
         <Link className=" text-sm sm:texbase" href="#services">
           Services
         </Link>

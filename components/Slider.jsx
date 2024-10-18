@@ -41,7 +41,7 @@ const TestimonialSlider = () => {
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
             Wow! This is amazing. I have been purchasing Telegram group members
-            for over a year and never got a delay! SmmValy did a great job
+            for over a year and never got a delay! DivineSMM did a great job
             always!
           </p>
         </div>
@@ -51,12 +51,12 @@ const TestimonialSlider = () => {
             alt="testimonial"
             className=" self-center m-auto w-[70px] h-[70px] rounded-full"
           />
-          <h1 className="mt-4 font-bold text-xl">Samantha</h1>
-          <p className="">Instagram Model</p>
+          <h1 className="mt-4 font-bold text-xl">Vanessa</h1>
+          <p className="">Business owner</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
             Order 10000 Telegram Followers and Got my followers as promised in
-            time! Happy to Purchased from SmmValy. We will Continue with them
+            time! Happy to Purchased from DivineSMM. We will Continue with them
             for our future purchase.
           </p>
         </div>
@@ -66,8 +66,8 @@ const TestimonialSlider = () => {
             alt="testimonial"
             className=" self-center m-auto w-[70px] h-[70px] rounded-full"
           />
-          <h1 className="mt-4 font-bold text-xl">Samantha</h1>
-          <p className="">Instagram Model</p>
+          <h1 className="mt-4 font-bold text-xl">Isabella</h1>
+          <p className="">Sales</p>
           <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <p className="mt-2 text-sm">
             Purchased 2000 Telegram subscibers for our company and worked

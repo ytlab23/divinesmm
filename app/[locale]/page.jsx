@@ -139,9 +139,14 @@ export default async function Home({ params: { locale } }) {
           ))}
         </div>
       </div>
-      <h2 className="text-center p-2">
-        SIGN UP TO THE CHEAPEST AND FASTEST TELEGRAM SMM PANEL!
-      </h2>
+      <div className="flex flex-col p-1">
+        <a
+          href=" https://panel.divinesmm.com/"
+          className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
+        >
+          SIGN UP TO THE CHEAPEST AND FASTEST TELEGRAM SMM PANEL!
+        </a>
+      </div>
       <div
         className="min-h-[80vh] bg-white flex flex-col sm:gap-y-16 gap-y-8 items-center sm:px-16 px-8 py-12 text-center"
         id="services"
@@ -163,6 +168,7 @@ export default async function Home({ params: { locale } }) {
           detail2Content2={tServices('detail-2-content-2')}
           detail2Content3={tServices('detail-2-content-3')}
           serviceTypes={tServices('serviceTypes')}
+          serviceBenefits={tServices('serviceBenefits')}
         />
       </div>
 
@@ -317,13 +323,18 @@ export default async function Home({ params: { locale } }) {
           className="self-center lg:w-[50%] w-[100%] max-w-[500px]"
         />
       </div>
-      <h3 className="text-center p-1 text-white">
-        Then, why wait? Hit the button below and start your SMM panel business
-        now!
-      </h3>
-      <h2 className="text-center p-1 text-white font-bold">
-        GET STARTED WITH THE BEST TELEGRAM SMM PANEL
-      </h2>
+      <div className="flex flex-col justify-center py-1">
+        <h3 className="text-center p-1 text-white">
+          Then, why wait? Hit the button below and start your SMM panel business
+          now!
+        </h3>
+        <a
+          href=" https://panel.divinesmm.com/"
+          className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
+        >
+          GET STARTED WITH THE BEST TELEGRAM SMM PANEL
+        </a>
+      </div>
 
       <div
         className="min-h-[80vh] bg-[#eff3fe] flex flex-col gap-y-16 items-center px-8 py-16 sm:p-16 text-center"
@@ -556,9 +567,12 @@ export default async function Home({ params: { locale } }) {
           Try out Divine Telegram SMM Panel and see your reach skyrocket like
           never before. Sign up now!
         </h3>
-        <p className="text-lg font-bold text-center text-black">
+        <a
+          href="https://divinesmm.vercel.app/"
+          className="sm:text-md text-xs font-bold text-center text-black p-2 rounded-md border border-black"
+        >
           SIGN UP TO THE #1 TELEGRAM SMM PANEL!
-        </p>
+        </a>
       </div>
     </main>
   );

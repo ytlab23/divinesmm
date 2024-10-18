@@ -9,6 +9,12 @@ const Header = async ({ locale }) => {
         className="sm:text-2xl text-lg sm:w-[90%] max-w-[1200px]"
         dangerouslySetInnerHTML={{ __html: t('content') }}
       />
+      <a
+        href=" https://panel.divinesmm.com/"
+        className="sm:text-2xl text-lg mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
+      >
+        GET STARTED!
+      </a>
     </div>
   );
 };

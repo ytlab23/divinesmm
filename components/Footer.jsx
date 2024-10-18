@@ -25,9 +25,6 @@ const Footer = async ({ locale }) => {
             rankings! */}
             {tFooter('content-one')}
           </p>
-          <p className="max-w-[320px] text-sm text-slate-50">
-            {tFooter('content-two')}
-          </p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-medium">Services</h1>
@@ -45,9 +42,11 @@ const Footer = async ({ locale }) => {
             <p className="max-w-[320px] text-sm text-slate-50">
               River side, California United States.
             </p>
-            <p className="max-w-[320px] text-sm text-slate-50">+13205471704</p>
             <p className="max-w-[320px] text-sm text-slate-50">
-              example@gmail.com
+              24/7 support via ticket system
+            </p>
+            <p className="max-w-[320px] text-sm text-slate-50">
+              support@divinesmm.com
             </p>
           </div>
         </div>
