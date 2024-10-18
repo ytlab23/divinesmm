@@ -55,6 +55,8 @@ export default async function RootLayout({ children, params: { locale } }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body
         className={`${inter.className} flex flex-col h-[100vh] justify-between`}
