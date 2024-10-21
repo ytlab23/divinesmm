@@ -48,6 +48,8 @@ export default async function Home({ params: { locale } }) {
   const { t: tBusinessFocus } = await initTranslations(locale, [
     'businessFocus',
   ]);
+  const { t: tButtons } = await initTranslations(locale, ['buttons']);
+  const { t: tFooter } = await initTranslations(locale, ['footer']);
 
   const aboutInfoImgs = [priceImg, twenyFourImg, deliveryImg];
 
@@ -144,7 +146,7 @@ export default async function Home({ params: { locale } }) {
           href=" https://panel.divinesmm.com/"
           className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
         >
-          SIGN UP TO THE CHEAPEST AND FASTEST TELEGRAM SMM PANEL!
+          {tButtons('SIGN-UP-CHEAPEST')}
         </a>
       </div>
       <div
@@ -169,15 +171,15 @@ export default async function Home({ params: { locale } }) {
           detail2Content3={tServices('detail-2-content-3')}
           serviceTypes={tServices('serviceTypes')}
           serviceBenefits={tServices('serviceBenefits')}
+          GETSTARTED={tButtons('GET-STARTED')}
+          ORDERNOW={tButtons('ORDER-NOW')}
         />
       </div>
-
       <div className="flex justify-center gap-6 flex-wrap items-center px-4 py-16 bg-[#f8f8f8] w-full">
         {JSON.parse(tCardDatas('infos')).map((info) => (
           <InfCard key={info.title} num={info.num} title={info.title} />
         ))}
       </div>
-
       <div
         className="min-h-[80vh] bg-white flex flex-col gap-y-16 items-center py-16 px-8 sm:p-16  text-center"
         id="how-to-order"
@@ -246,7 +248,6 @@ export default async function Home({ params: { locale } }) {
           />
         </div>
       </div>
-
       <div className="bg-white px-8 py-16 sm:p-16 flex flex-col items-center  text-neutral-800">
         <div className="flex flex-col max-w-[900px] gap-y-8">
           <h2 className="text-neutral-800  text-lg sm:text-2xl font-bold">
@@ -268,7 +269,6 @@ export default async function Home({ params: { locale } }) {
           </div>
         </div>
       </div>
-
       <div className="bg-[#f5f5f5] px-8 py-16 sm:p-16 min-h-[60vh] flex flex-col lg:flex-row  justify-center gap-8 items-center">
         {JSON.parse(tCardDatas('panelOne')).map((panel, indx) => (
           <PanelCrad
@@ -279,7 +279,6 @@ export default async function Home({ params: { locale } }) {
           />
         ))}
       </div>
-
       <div className="bg-[#f5f5f5] px-8 py-16 sm:p-16 min-h-[60vh] flex flex-col lg:flex-row  justify-center gap-8 items-center">
         {JSON.parse(tCardDatas('panelTwo')).map((panel, indx) => (
           <PanelCrad
@@ -290,7 +289,6 @@ export default async function Home({ params: { locale } }) {
           />
         ))}
       </div>
-
       <div className="bg-white px-8 py-16 sm:p-16 min-h-[60vh] flex flex-col lg:flex-row justify-center gap-4 items-center text-neutral-800">
         <div className="flex flex-col gap-y-8 max-w-[600px] lg:w-[50%]">
           <h2 className="sm:text-2xl text-lg font-bold">
@@ -324,18 +322,14 @@ export default async function Home({ params: { locale } }) {
         />
       </div>
       <div className="flex flex-col justify-center py-1">
-        <h3 className="text-center p-1 text-white">
-          Then, why wait? Hit the button below and start your SMM panel business
-          now!
-        </h3>
+        <h3 className="text-center p-1 text-white">{tButtons('btn')}</h3>
         <a
           href=" https://panel.divinesmm.com/"
           className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
         >
-          GET STARTED WITH THE BEST TELEGRAM SMM PANEL
+          {tButtons('GET-STARTED-PANEL')}
         </a>
       </div>
-
       <div
         className="min-h-[80vh] bg-[#eff3fe] flex flex-col gap-y-16 items-center px-8 py-16 sm:p-16 text-center"
         id="why-us"
@@ -368,8 +362,13 @@ export default async function Home({ params: { locale } }) {
             ))}
           </div>
         </div>
+        <a
+          href="https://divinesmm.vercel.app/"
+          className="sm:text-md text-xs font-bold text-center text-black p-2 rounded-md border border-black"
+        >
+          {tButtons('TRY-NOW')}
+        </a>
       </div>
-
       <div className="bg-white px-8 py-16 sm:p-16 flex flex-col items-center  text-neutral-800">
         <div className="flex flex-col max-w-[1000px] gap-y-8">
           <h2 className="text-neutral-800 text-lg sm:text-2xl font-bold">
@@ -387,8 +386,13 @@ export default async function Home({ params: { locale } }) {
             </p>
           </div>
         </div>
+        <a
+          href="https://divinesmm.vercel.app/"
+          className="sm:text-md mt-4 text-xs font-bold text-center text-black p-2 rounded-md border border-black"
+        >
+          {tButtons('SIGN-UP')}
+        </a>
       </div>
-
       <div className="bg-[#f5f5f5] px-8 py-16 sm:p-16 min-h-[60vh] flex flex-col lg:flex-row justify-center gap-8 items-center">
         {JSON.parse(tCardDatas('panelThree')).map((panel, indx) => (
           <PanelCrad
@@ -414,10 +418,9 @@ export default async function Home({ params: { locale } }) {
           {tTestimonial('content')}
         </h3>
         <div className="testimonial text-neutral-800 overflow-hidden max-w-[100%] flex justify-center items-center">
-          <TestimonialSlider />
+          <TestimonialSlider lists={tTestimonial('testimonial-lists')} />
         </div>
       </div>
-
       <div className="bg-[#f5f5f5] px-8 py-16 sm:p-16 min-h-[60vh] flex flex-col lg:flex-row justify-center gap-8 items-center">
         {JSON.parse(tCardDatas('aboutInfos')).map((panel, indx) => (
           <PanelCrad
@@ -428,7 +431,6 @@ export default async function Home({ params: { locale } }) {
           />
         ))}
       </div>
-
       <div className="bg-white px-8 py-16 sm:p-16 flex flex-col items-center  text-neutral-800">
         <div className="flex flex-col max-w-[1000px] gap-y-8">
           <h2 className="text-neutral-800 text-2xl font-bold">
@@ -450,6 +452,12 @@ export default async function Home({ params: { locale } }) {
         className="min-h-[50vh] bg-[#f5f5f5] flex flex-col gap-y-8 items-center px-8 py-16 sm:p-16 text-center"
         id="services"
       >
+        <a
+          href="https://divinesmm.vercel.app/"
+          className="sm:text-md mt-4 text-xs font-bold text-center text-black p-2 rounded-md border border-black"
+        >
+          {tButtons('GET-STARTED')}
+        </a>
         <h1 className="sm:text-4xl text-2xl text-neutral-800 font-bold">
           {tPayment('title')}
         </h1>
@@ -560,18 +568,16 @@ export default async function Home({ params: { locale } }) {
           ))}
         </div>
         <h1 className="sm:text-4xl text-center text-2xl text-neutral-800 font-bold md:w-[70%]">
-          Want to Increase Your Reach On Telegram?
+          {tFooter('title')}
         </h1>
         <h3 className="text-lg text-center text-neutral-800 md:w-[70%]">
-          Get the best high-quality SMM services at the cheapest price from us.
-          Try out Divine Telegram SMM Panel and see your reach skyrocket like
-          never before. Sign up now!
+          {tFooter('content')}
         </h3>
         <a
           href="https://divinesmm.vercel.app/"
           className="sm:text-md text-xs font-bold text-center text-black p-2 rounded-md border border-black"
         >
-          SIGN UP TO THE #1 TELEGRAM SMM PANEL!
+          {tButtons('SIGN-1')}
         </a>
       </div>
     </main>

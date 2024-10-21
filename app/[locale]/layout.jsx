@@ -31,6 +31,7 @@ const i18nNamespaces = ['nav'];
 export default async function RootLayout({ children, params: { locale } }) {
   const { resources } = await initTranslations(locale, i18nNamespaces);
   const metadata = await generateMetadata({ params: { locale } });
+  const { t: tButtons } = await initTranslations(locale, ['buttons']);
 
   return (
     <html lang={locale} dir={dir(locale)}>
@@ -66,7 +67,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           locale={locale}
           resources={resources}
         >
-          <Navbar />
+          <Navbar GETSTARTED={tButtons('GET-STARTED')} />
         </TranslationsProvider>
 
         {children}

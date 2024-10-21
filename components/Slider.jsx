@@ -9,7 +9,7 @@ import testimonialTwo from '../assets/testimonial2.png';
 import testimonialThree from '../assets/testimonial3.png';
 import testimonialFour from '../assets/testimonial4.png';
 
-const TestimonialSlider = () => {
+const TestimonialSlider = (props) => {
   const settings = {
     dots: false,
     slidesToShow: 3,
@@ -27,68 +27,34 @@ const TestimonialSlider = () => {
       },
     ],
   };
+  const testimonialLists = JSON.parse(props.lists);
+  const testimonialImages = [
+    testimonialOne,
+    testimonialTwo,
+    testimonialThree,
+    testimonialFour,
+  ];
   return (
     <div className="slider-container max-w-[100%]">
       <Slider {...settings}>
-        <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
-          <Image
-            src={testimonialOne}
-            alt="testimonial"
-            className=" self-center m-auto w-[70px] h-[70px] rounded-full"
-          />
-          <h1 className="mt-4 font-bold text-xl">Adam Smith</h1>
-          <p className="">Businessman</p>
-          <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
-          <p className="mt-2 text-sm">
-            Wow! This is amazing. I have been purchasing Telegram group members
-            for over a year and never got a delay! DivineSMM did a great job
-            always!
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
-          <Image
-            src={testimonialTwo}
-            alt="testimonial"
-            className=" self-center m-auto w-[70px] h-[70px] rounded-full"
-          />
-          <h1 className="mt-4 font-bold text-xl">Vanessa</h1>
-          <p className="">Business owner</p>
-          <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
-          <p className="mt-2 text-sm">
-            Order 10000 Telegram Followers and Got my followers as promised in
-            time! Happy to Purchased from DivineSMM. We will Continue with them
-            for our future purchase.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
-          <Image
-            src={testimonialThree}
-            alt="testimonial"
-            className=" self-center m-auto w-[70px] h-[70px] rounded-full"
-          />
-          <h1 className="mt-4 font-bold text-xl">Isabella</h1>
-          <p className="">Sales</p>
-          <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
-          <p className="mt-2 text-sm">
-            Purchased 2000 Telegram subscibers for our company and worked
-            indeed! Support team is also in time always.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl ">
-          <Image
-            src={testimonialFour}
-            alt="testimonial"
-            className=" self-center m-auto w-[70px] h-[70px] rounded-full"
-          />
-          <h1 className="mt-4 font-bold text-xl">Samantha</h1>
-          <p className="">Instagram Model</p>
-          <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
-          <p className="mt-2 text-sm">
-            I Just love the services, instant delivered my Telegram views order
-            and the Telegram Page subscribers! I am buying from them long time
-            and love to buy more in future.
-          </p>
-        </div>
+        {testimonialLists.map((item, indx) => {
+          return (
+            <div
+              className="flex flex-col items-center justify-center max-w-[450px]  gap-y-8 py-4 px-8 bg-white order-box2 rounded-2xl "
+              key={indx}
+            >
+              <Image
+                src={testimonialImages[indx]}
+                alt="testimonial"
+                className=" self-center m-auto w-[70px] h-[70px] rounded-full"
+              />
+              <h1 className="mt-4 font-bold text-xl">{item.name}</h1>
+              <p className="">{item.job}</p>
+              <p className="mt-2 ">⭐ ⭐ ⭐ ⭐ ⭐</p>
+              <p className="mt-2 text-sm">{item.message}</p>
+            </div>
+          );
+        })}
       </Slider>
     </div>
   );

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import logo from '../assets/logo2.png';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="w-full bg-inherit sticky z-20 top-0 left-0 flex flex-wrap gap-4 sm:flex-nowrap justify-between items-center py-4 px-8 sm:px-16">
       <div className="logo  flex gap-x-4 items-center">
@@ -25,7 +25,7 @@ const Navbar = () => {
           href=" https://panel.divinesmm.com/"
           className="text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-white p-2 rounded-md border border-white"
         >
-          GET STARTED!
+          {props.GETSTARTED}
         </a>
         <Link className=" text-sm sm:texbase" href="#services">
           Services

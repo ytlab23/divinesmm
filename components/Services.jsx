@@ -122,7 +122,7 @@ const Services = (props) => {
         href=" https://panel.divinesmm.com/"
         className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-black p-2 rounded-md border border-black"
       >
-        GET STARTED!
+        {props.GETSTARTED}
       </a>
       <div className="flex flex-col lg:flex-row gap-4 text-left justify-between lg:w-[85%]">
         <div className="flex flex-col gap-3">
@@ -185,7 +185,7 @@ const Services = (props) => {
         href=" https://panel.divinesmm.com/"
         className="sm:text-md text-xs mt-1 font-bold max-w-[340px] mx-auto text-center text-black p-2 rounded-md border border-black"
       >
-        ORDER NOW!
+        {props.ORDERNOW}
       </a>
     </>
   );
