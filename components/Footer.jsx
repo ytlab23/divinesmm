@@ -5,13 +5,7 @@ import initTranslations from '../app/i18n';
 
 const Footer = async ({ locale }) => {
   const { t: tFooter } = await initTranslations(locale, ['footer']);
-  const services = [
-    'Telegram Group Members',
-    'Telegram Channel Subscribers',
-    'Telegram Mass DM',
-    'Telegram Views',
-    'Telegram Comments & Shares',
-  ];
+  const services = JSON.parse(tFooter('footer-services'));
   return (
     <div
       className="flex flex-col gap-y-8 bg-cyan-900 px-4 sm:px-16 py-8"
@@ -27,7 +21,9 @@ const Footer = async ({ locale }) => {
           </p>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1 className="text-2xl font-medium">Services</h1>
+          <h1 className="text-2xl font-medium">
+            {tFooter('footer-service-title')}
+          </h1>
           <div className="flex flex-col gap-3">
             {services.map((service) => (
               <p key={service} className="max-w-[320px] text-sm text-slate-50">
@@ -37,13 +33,15 @@ const Footer = async ({ locale }) => {
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1 className="text-2xl font-medium">Contact info</h1>
+          <h1 className="text-2xl font-medium">
+            {tFooter('footer-contact-title')}
+          </h1>
           <div className="flex flex-col gap-3">
             <p className="max-w-[320px] text-sm text-slate-50">
               River side, California United States.
             </p>
             <p className="max-w-[320px] text-sm text-slate-50">
-              24/7 support via ticket system
+              {tFooter('footer-contact-24')}
             </p>
             <p className="max-w-[320px] text-sm text-slate-50">
               support@divinesmm.com
