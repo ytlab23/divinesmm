@@ -314,7 +314,7 @@ export default async function Home({ params: { locale } }) {
             </p>
           </div>
         </div>
-
+        href=" https://panel.divinesmm.com/"
         <Image
           src={socialStrategy}
           alt="gif"
@@ -363,7 +363,7 @@ export default async function Home({ params: { locale } }) {
           </div>
         </div>
         <a
-          href="https://divinesmm.vercel.app/"
+          href=" https://panel.divinesmm.com/"
           className="sm:text-md text-xs font-bold text-center text-black p-2 rounded-md border border-black"
         >
           {tButtons('TRY-NOW')}
@@ -387,7 +387,7 @@ export default async function Home({ params: { locale } }) {
           </div>
         </div>
         <a
-          href="https://divinesmm.vercel.app/"
+          href=" https://panel.divinesmm.com/"
           className="sm:text-md mt-4 text-xs font-bold text-center text-black p-2 rounded-md border border-black"
         >
           {tButtons('SIGN-UP')}
@@ -453,7 +453,7 @@ export default async function Home({ params: { locale } }) {
         id="services"
       >
         <a
-          href="https://divinesmm.vercel.app/"
+          href=" https://panel.divinesmm.com/"
           className="sm:text-md mt-4 text-xs font-bold text-center text-black p-2 rounded-md border border-black"
         >
           {tButtons('GET-STARTED')}
@@ -574,7 +574,7 @@ export default async function Home({ params: { locale } }) {
           {tFooter('content')}
         </h3>
         <a
-          href="https://divinesmm.vercel.app/"
+          href=" https://panel.divinesmm.com/"
           className="sm:text-md text-xs font-bold text-center text-black p-2 rounded-md border border-black"
         >
           {tButtons('SIGN-1')}
