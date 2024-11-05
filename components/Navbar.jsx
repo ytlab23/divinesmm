@@ -3,7 +3,7 @@ import React from 'react';
 import LanguageChanger from './LanguageChanger';
 import Image from 'next/image';
 
-import logo from '../assets/logo2.png';
+import logo from '../assets/logo.svg';
 
 const Navbar = (props) => {
   return (
